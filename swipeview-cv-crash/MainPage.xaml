@@ -4,14 +4,8 @@
              x:Class="swipeview_cv_crash.MainPage">
 
 	
-	<CollectionView x:Name="cView">
-		<CollectionView.ItemTemplate>
-			<DataTemplate>
-				<VerticalStackLayout>
-					<SwipeView></SwipeView>
-				</VerticalStackLayout>
-			</DataTemplate>
-		</CollectionView.ItemTemplate>
-	</CollectionView>
+	<VerticalStackLayout>
+        <Button Text="Open Popup" Clicked="Button_Clicked" />
+    </VerticalStackLayout>
 
 </ContentPage>

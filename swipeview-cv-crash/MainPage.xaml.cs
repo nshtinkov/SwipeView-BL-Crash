@@ -1,11 +1,18 @@
-﻿namespace swipeview_cv_crash
+﻿using CommunityToolkit.Maui.Views;
+
+namespace swipeview_cv_crash
 {
 	public partial class MainPage : ContentPage
 	{
 		public MainPage()
 		{
 			InitializeComponent();
-			cView.ItemsSource = new List<string>() { "One" };
+		}
+
+		private void Button_Clicked(object sender, EventArgs e)
+		{
+			var popup = new ListPopup();
+			this.ShowPopup(popup);
 		}
 	}
 
